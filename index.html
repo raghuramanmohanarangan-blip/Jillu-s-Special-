@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#140b16">
+  <meta name="description" content="A little birthday universe made just for Kannammaa.">
+  <title>For Kannammaa ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main>
+    <section class="login-screen" id="loginScreen" aria-labelledby="loginTitle">
+      <div class="login-card">
+        <div class="tiny-heart" aria-hidden="true">♥</div>
+        <p class="eyebrow">A PRIVATE LITTLE UNIVERSE</p>
+        <h1 id="loginTitle">Just for<br><em>you, Kannammaa.</em></h1>
+        <p class="muted intro">Some surprises are too special for the whole world.<br>This one is yours. ♡</p>
+        <form id="loginForm">
+          <label for="password">Your secret password</label>
+          <input id="password" name="password" type="password" placeholder="A date, a word, our little secret…" autocomplete="off" required>
+          <button class="button primary full" type="submit">Unlock my surprise <span>♡</span></button>
+          <p class="hint" id="loginHint">Hint: choose a password you set in the code.</p>
+          <p class="error" id="loginError" role="alert" hidden>Not quite, Kannammaa. Try again 💗</p>
+        </form>
+        <p class="tiny-note">MADE WITH LOVE, JUST FOR YOU</p>
+      </div>
+    </section>
+
+    <div id="birthdaySite" hidden>
+      <header class="topbar">
+        <a class="wordmark" href="#home">for <span>Kannammaa</span> ♡</a>
+        <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">♫ <span>Play our song</span></button>
+      </header>
+
+      <section class="hero section" id="home">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <p class="eyebrow reveal">11 · 11 · A DAY AS SPECIAL AS YOU</p>
+        <p class="script reveal">Happy Birthday</p>
+        <h2 class="hero-title reveal">My <em>Kannammaa</em><span class="sparkle">✦</span></h2>
+        <p class="hero-copy reveal">If I could wrap up every beautiful feeling you bring into my life,<br class="desktop-only"> this little page still wouldn't be big enough.</p>
+        <a class="button primary reveal" href="#memories">Come inside <span>↓</span></a>
+        <p class="scroll-note reveal">A LITTLE WORLD MADE FOR YOU</p>
+      </section>
+
+      <section class="section intro-section" id="message">
+        <div class="section-heading reveal">
+          <p class="eyebrow">BEFORE ANYTHING ELSE</p>
+          <h2>Today, the world got <em>you.</em></h2>
+          <p class="muted">And somewhere along the way, my world became brighter because of you.</p>
+        </div>
+        <div class="quote-card reveal">
+          <span class="quote-mark">“</span>
+          <p>You don't have to do anything extraordinary to be special to me. You being you has always been more than enough.</p>
+          <span class="signature">Always, yours ♡</span>
+        </div>
+      </section>
+
+      <section class="section memories-section" id="memories">
+        <div class="section-heading reveal">
+          <p class="eyebrow">LITTLE PIECES OF FOREVER</p>
+          <h2>Our kind of <em>magic.</em></h2>
+          <p class="muted">Replace these sample photos and captions with your own memories.</p>
+        </div>
+        <div class="memory-grid">
+          <article class="memory-card reveal">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=85" alt="A couple holding hands" loading="lazy">
+            <div class="memory-caption"><span>01 / THE BEGINNING</span><h3>Where our story started</h3><p>One little moment that became a favourite chapter.</p></div>
+          </article>
+          <article class="memory-card memory-offset reveal">
+            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85" alt="A couple sharing a warm moment" loading="lazy">
+            <div class="memory-caption"><span>02 / MY FAVOURITE FEELING</span><h3>Just being with you</h3><p>Ordinary days somehow become memories with you.</p></div>
+          </article>
+          <article class="memory-card reveal">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=85" alt="Golden sunlight across a peaceful landscape" loading="lazy">
+            <div class="memory-caption"><span>03 / WHAT'S AHEAD</span><h3>More moments to come</h3><p>So many places, laughs, and little adventures still waiting for us.</p></div>
+          </article>
+        </div>
+        <p class="photo-tip">♡ Tip: use photos you both love. The real memories are the magic.</p>
+      </section>
+
+      <section class="section letter-section" id="letter">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A FEW WORDS FROM MY HEART</p>
+          <h2>For you, <em>my love.</em></h2>
+          <p class="muted">Tap the envelope. This part is just between us.</p>
+        </div>
+        <button class="envelope-wrap reveal" id="openLetter" type="button" aria-expanded="false" aria-controls="letterContent">
+          <span class="envelope" aria-hidden="true"><span class="envelope-flap"></span><span class="envelope-heart">♥</span></span>
+          <span class="envelope-label" id="envelopeLabel">Open your letter</span>
+        </button>
+        <article class="letter-paper" id="letterContent" hidden>
+          <p class="script letter-dear">My dearest Kannammaa,</p>
+          <p>Happy birthday, my love. ❤️</p>
+          <p>I wish I could put into words how much happiness you bring into my life. It's in the little things, the conversations, the laughter, and the simple comfort of knowing you're part of my world.</p>
+          <p>Today, I hope you feel loved in all the ways you deserve. I hope this new year of your life brings you peace when things feel heavy, courage when you need it, reasons to laugh until your cheeks hurt, and dreams that make you excited to wake up each morning.</p>
+          <p>Thank you for being you, Kannammaa. I don't want this page to be just a birthday wish; I want it to be a little reminder that you matter, that your happiness matters, and that there are so many beautiful moments still waiting to be made.</p>
+          <p>Here's to more memories, more silly moments, more adventures, and more birthdays where I get to remind you how special you are.</p>
+          <p class="script letter-signoff">With all my love, always. ♡</p>
+          <p class="edit-reminder">Make this letter yours: edit these paragraphs in index.html with your own words.</p>
+        </article>
+      </section>
+
+      <section class="section cake-section" id="cake">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MAKE A WISH, BIRTHDAY GIRL</p>
+          <h2>A little birthday <em>magic.</em></h2>
+          <p class="muted">Close your eyes for a second, make a wish, then tap the candles.</p>
+        </div>
+        <div class="cake-scene reveal">
+          <div class="cake-glow"></div>
+          <div class="candles" id="candles">
+            <button class="candle" type="button" aria-label="Blow out candle 1"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle" type="button" aria-label="Blow out candle 2"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle" type="button" aria-label="Blow out candle 3"><span class="flame"></span><span class="wick"></span></button>
+          </div>
+          <div class="cake-top"></div><div class="cake-body"><span class="icing-drip"></span><span class="cake-decoration">♡ &nbsp; ✦ &nbsp; ♡</span></div><div class="cake-plate"></div>
+        </div>
+        <button class="button primary" id="wishButton" type="button">Blow out the candles ✨</button>
+        <p class="wish-message" id="wishMessage" aria-live="polite"></p>
+      </section>
+
+      <section class="section final-section" id="surprise">
+        <div class="final-card reveal">
+          <div class="lock-icon" aria-hidden="true">✧</div>
+          <p class="eyebrow">ONE LAST LITTLE SECRET</p>
+          <h2>There's one more thing,<br><em>Kannammaa.</em></h2>
+          <p class="muted">You've reached the last page, but not the end of the surprises.</p>
+          <button class="button outline" id="revealSurprise" type="button">Reveal my final message ♡</button>
+          <div class="final-message" id="finalMessage" hidden>
+            <p class="script">You are my favourite kind of magic.</p>
+            <p>Whatever this next chapter brings, I hope it gives you a thousand reasons to smile. Never forget how wonderfully you deserve to be loved, celebrated, and supported — today and every day.</p>
+            <div class="final-heart">♥</div>
+            <p class="signature">Happy Birthday, Kannammaa.</p>
+            <p class="script">Forever cheering for you. ♡</p>
+            <p class="edit-reminder">Add a personal video, a voice note, or a special plan here if you want a bigger surprise.</p>
+          </div>
+        </div>
+      </section>
+      <footer><span>Made with love for Kannammaa</span><span>11 · 11 · 2026 ♡</span></footer>
+    </div>
+  </main>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <!-- Add your own licensed MP3 as music.mp3 in this folder and uncomment the source below. -->
+    <!-- <source src="music.mp3" type="audio/mpeg"> -->
+  </audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
