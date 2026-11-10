@@ -126,6 +126,7 @@ const audio = $("#backgroundMusic");
 $("#musicToggle").addEventListener("click", async () => {
   const button = $("#musicToggle");
   const source = audio.querySelector("source");
+  console.log(source);
   if (!source) {
     showToast("Add your chosen song as music.mp3 to enable music 🎵");
     return;
@@ -159,4 +160,17 @@ document.querySelectorAll(".memory-card img").forEach((img) => {
     img.style.display = "none";
     img.parentElement.style.background = "linear-gradient(135deg,#46243f,#251327)";
   });
+});
+
+document.getElementById('revealSurprise').addEventListener('click', function() {
+  const finalMessage = document.getElementById('finalMessage');
+  finalMessage.removeAttribute('hidden');
+  
+  // Optional: Auto-plays the video when the message is revealed
+  const video = document.getElementById('surpriseVideo');
+  if (video) {
+    video.play();
+  }
+  
+  this.style.display = 'none'; // Hides the button after click
 });
