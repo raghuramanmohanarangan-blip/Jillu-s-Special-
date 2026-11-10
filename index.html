@@ -19,8 +19,8 @@
     <section class="login-screen" id="loginScreen" aria-labelledby="loginTitle">
       <div class="login-card">
         <div class="tiny-heart" aria-hidden="true">♥</div>
-        <p class="eyebrow">A PRIVATE LITTLE UNIVERSE</p>
-        <h1 id="loginTitle">Just for<br><em>you, Kannammaa.</em></h1>
+        <p class="eyebrow">A LITTLE UNIVERSE TO YOU</p>
+        <h1 id="loginTitle">Just for you<br><em>Karthaave</em></h1>
         <p class="muted intro">Some surprises are too special for the whole world.<br>This one is yours. ♡</p>
         <form id="loginForm">
           <label for="password">Your secret password</label>
@@ -70,19 +70,41 @@
         </div>
         <div class="memory-grid">
           <article class="memory-card reveal">
-            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=85" alt="A couple holding hands" loading="lazy">
-            <div class="memory-caption"><span>01 / THE BEGINNING</span><h3>Where our story started</h3><p>One little moment that became a favourite chapter.</p></div>
+            <!-- <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=85" alt="A couple holding hands" loading="lazy"> -->
+            <img src="images/first-meet.jpg" alt="A couple holding hands" loading="lazy">
+            
+            <div class="memory-caption"><span>01 / THE BEGINNING</span><h3>Where our story started</h3><p>At Lyfe by Sourl Garden Bistro, Alwarpet.</p></div>
           </article>
           <article class="memory-card memory-offset reveal">
-            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85" alt="A couple sharing a warm moment" loading="lazy">
-            <div class="memory-caption"><span>02 / MY FAVOURITE FEELING</span><h3>Just being with you</h3><p>Ordinary days somehow become memories with you.</p></div>
+            <img src="images/first-travel.jpg" alt="A couple sharing a warm moment" loading="lazy">
+            <div class="memory-caption"><span>02 / MY FAVOURITE FEELING</span><h3>First Air Travel Together</h3><p>Fits Air - Colombo to Chennai.</p></div>
           </article>
           <article class="memory-card reveal">
-            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=85" alt="Golden sunlight across a peaceful landscape" loading="lazy">
-            <div class="memory-caption"><span>03 / WHAT'S AHEAD</span><h3>More moments to come</h3><p>So many places, laughs, and little adventures still waiting for us.</p></div>
+            <img src="images/peradhiniya.jpg" alt="A couple holding hands" loading="lazy">
+            <div class="memory-caption"><span>03 / TOGETHER</span><h3>Just being with you</h3><p>Ordinary days somehow become memories with you.</p></div>
+          </article>
+          <article class="memory-card memory-offset reveal">
+            <img src="images/kandy.jpg" alt="A couple sharing a warm moment" loading="lazy">
+            <div class="memory-caption"><span>04 / KANDY VIBE</span><h3>Just being with you</h3><p>Ordinary days somehow become memories with you.</p></div>
+          </article>
+          <article class="memory-card reveal">
+            <img src="images/dude.jpg" alt="A couple holding hands" loading="lazy">
+            <div class="memory-caption"><span>05 / MATHUR VISIT</span><h3>Just being with you</h3><p>Ordinary days somehow become memories with you.</p></div>
+          </article>
+          <!-- <article class="memory-card memory-offset reveal">
+            <img src="images/Baticalou.jpg" alt="A couple sharing a warm moment" loading="lazy">
+            <div class="memory-caption"><span>06 / MATTAKALAPPU DAYS</span><h3>Just being with you</h3><p>Ordinary days somehow become memories with you.</p></div>
+          </article> -->
+          <article class="memory-card reveal">
+            <img src="images/proposal.jpg" alt="A couple holding hands" loading="lazy">
+            <div class="memory-caption"><span>07 / PROPOSAL</span><h3>Just being with you</h3><p>Ordinary days somehow become memories with you.</p></div>
+          </article>
+          <article class="memory-card reveal">
+            <img src="images/looking-forward.jpg" alt="Golden sunlight across a peaceful landscape" loading="lazy">
+            <div class="memory-caption"><span>08 / WHAT'S AHEAD</span><h3>More moments to come</h3><p>So many places, laughs, and little adventures still waiting for us.</p></div>
           </article>
         </div>
-        <p class="photo-tip">♡ Tip: use photos you both love. The real memories are the magic.</p>
+        <p class="photo-tip">♡ The real memories are the magic.</p>
       </section>
 
       <section class="section letter-section" id="letter">
@@ -134,12 +156,26 @@
           <p class="muted">You've reached the last page, but not the end of the surprises.</p>
           <button class="button outline" id="revealSurprise" type="button">Reveal my final message ♡</button>
           <div class="final-message" id="finalMessage" hidden>
+
+            <!-- VIDEO CONTAINER START -->
+            <div class="video-container">
+              <!-- Option A: For a local video file (e.g., mp4) -->
+              <video id="surpriseVideo" controls width="100%" poster="placeholder-image.jpg">
+                <source src="videos/collage-vids.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+              <!-- Option B: Un-comment this if you want to use a YouTube embed instead -->
+              <!-- 
+              <iframe width="100%" height="315" src="https://youtube.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+              -->
+            </div>
+            <!-- VIDEO CONTAINER END -->
             <p class="script">You are my favourite kind of magic.</p>
             <p>Whatever this next chapter brings, I hope it gives you a thousand reasons to smile. Never forget how wonderfully you deserve to be loved, celebrated, and supported — today and every day.</p>
             <div class="final-heart">♥</div>
-            <p class="signature">Happy Birthday, Kannammaa.</p>
+            <p class="signature">Happy Birthday, Sangeetha.</p>
             <p class="script">Forever cheering for you. ♡</p>
-            <p class="edit-reminder">Add a personal video, a voice note, or a special plan here if you want a bigger surprise.</p>
           </div>
         </div>
       </section>
@@ -149,7 +185,7 @@
 
   <audio id="backgroundMusic" loop preload="none">
     <!-- Add your own licensed MP3 as music.mp3 in this folder and uncomment the source below. -->
-    <!-- <source src="music.mp3" type="audio/mpeg"> -->
+    <source src="audios/music.mp3" type="audio/mpeg">
   </audio>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
