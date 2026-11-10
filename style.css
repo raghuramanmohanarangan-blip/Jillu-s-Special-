@@ -137,3 +137,17 @@ footer { display:flex;flex-direction:column;gap:5px;align-items:center;justify-c
   *,*::before,*::after { scroll-behavior:auto !important;animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important; }
   .reveal { opacity:1;transform:none; }
 }
+.video-container {
+  width: 100%;
+  max-width: 500px; /* Limits the size so it looks elegant on desktop */
+  margin: 20px auto; /* Centers the video and adds spacing */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
